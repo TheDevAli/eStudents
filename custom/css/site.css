@@ -1,0 +1,133 @@
+/*custom with class following bootstrap pattern to name it*/
+body {
+	/*#D3D3D3, #BDBDBD, #9E9E9E, #7D7D7D, #696969*/
+	background: linear-gradient(-45deg, #D3D3D3, #BDBDBD, #9E9E9E, #7D7D7D, #696969);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+
+	overflow-x:hidden;
+}
+
+.btn-big{
+	min-width: 100px;
+	min-height: 80px;
+}
+
+.form-box{
+	min-width: 400px;
+	background-color: rgba(0,0,0,0.6); 
+	border: 2px solid #777;
+}
+
+.filter-btn{
+	float: right
+}
+
+.logo-cap{
+	font-size: 100px;
+}
+
+/*Colorfull background animation*/
+@keyframes gradient {
+0% {
+	background-position: 0% 50%;
+   }
+50% {
+	background-position: 100% 50%;
+    }
+100% {
+	background-position: 0% 50%;
+     }
+}
+
+.bg-gray{
+	background-color: #E0E0E0;
+}
+
+.hover-gray{
+	background-color: rgba(0,0,0,0.0);
+}
+
+.v-break{
+	border-right: 2px solid black;
+	height: 100%;
+}
+
+.hover-gray:hover{
+	cursor: pointer;
+	background-color: #E0E0E0;
+}
+
+.popup-form {
+	display: none; /*temporarily makes the form invisilbe but we set the display visible when user clicks new post*/
+	max-width: 50%;
+	padding: 2em 2em;
+	z-index: 10;
+	left: 0;
+	right: 0;
+	position: fixed;
+	margin: auto;
+	background-color: gainsboro;
+	box-shadow: 10px 10px 5px grey;
+}
+
+.reply-sidebar{
+	min-height: 300px;
+}
+
+.simple-link{
+	text-decoration: none;
+	color: black;
+}
+
+.gray-separator{
+	border-right: 3px solid gray;
+}
+
+.like-btn{
+	font-size: 2.5rem;
+	margin-left: 1rem;
+}
+
+.like-btn:hover{
+	cursor: pointer;
+}
+
+.emoji-btn{
+	font-size: 1.5rem;
+}
+
+/*remove gap from heading and border of table (tutor portal) */
+.my-1 {
+	margin-top: 0!important;
+}
+
+/* spacing between headers and bg on profile page*/
+#userStatisticsHeader {
+	margin-top: 0.25em!important;
+}
+
+/*CSS for TABLET*/
+@media only screen and (max-width: 1080px)  { 
+	.popup-form{
+		margin: 10px;
+	}
+}
+
+/*CSS for MOBILE*/
+@media only screen and (max-width: 768px)  {
+	.reply-sidebar{
+		min-height: auto;
+	}
+
+	.popup-form{
+		margin: 10px;
+	}
+
+	.filter-btn{
+		float: none;
+		margin-top: 0.1rem;
+	}
+
+}
+
